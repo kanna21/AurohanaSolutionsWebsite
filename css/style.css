@@ -82,13 +82,21 @@ body {
 	-webkit-font-smoothing: antialiased !important;
 	
 }
-
-html,body{
-    overflow: hidden;
-    height: 100%;
+html,body {
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
 }
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+::-o-scrollbar
+ {
+     display:none;
+ } /* opera */
 
-
+ ::-moz-scrollbars {display:none;}
 h1 strong{
 	font-weight: 900;
 }
@@ -453,7 +461,19 @@ color:#fff;
 	}
         
         
-    @media (max-width: 800px) {
+    @media(max-width:440px){
+        .title-logo{
+            width:30px;
+        }
+
+        .nim-menu a.navbar-brand{
+            font-size: 1em;
+        }
+        .nav-title{
+            margin: 15px 0px;
+        }
+    }
+    @media (max-width: 1200px) {
         .navbar-header {
             float: none;
         }
