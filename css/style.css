@@ -368,7 +368,8 @@ div.preloader {
  
 /* Navigation */
 .nim-menu{
-	padding: 5px;
+    
+	padding-top: 15px;
 	transition: all 0.8s;
         background:#000;
         border-bottom:none;
@@ -391,17 +392,17 @@ div.preloader {
 }
  */
 .title-logo{
-    margin-top: 10px;
+   
     margin-right: 20px;
     float: left;
     width: 50px;
-    margin-top: 10px
+    
 }
 
 .nav-title{
     height: 30px;
     margin-left: 0px;
-    margin: 20px 0px;
+    margin: 13px 0px;
 }
 
 
@@ -464,10 +465,14 @@ color:#fff;
     @media(max-width:440px){
         .title-logo{
             width:30px;
+            margin-left: 10px;
+            margin-top: 7px;
+            margin-right: 10px;
         }
 
         .nim-menu a.navbar-brand{
             font-size: 1em;
+            margin-top: 11px;            
         }
         .nav-title{
             margin: 15px 0px;
