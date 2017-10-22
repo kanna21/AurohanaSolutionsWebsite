@@ -33,7 +33,7 @@ VERSION : 1.1
         =========================================================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/color/rose.css">
+	<link rel="stylesheet" type="text/css" href="css/color/gold.css">
         
 </head>
 <body >
@@ -54,7 +54,7 @@ VERSION : 1.1
  ============================================================================================================================-->    
    <!-- Navigation
     ==========================================-->
-    <nav  class=" nim-menu navbar navbar-default navbar-fixed-top">
+    <nav  class=" au-menu navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -66,30 +66,71 @@ VERSION : 1.1
           </button>
             <div class="clear-fix">
                 <img class="title-logo" src="images/logo.png" alt="logo"/>
-                <a class="navbar-brand nav-title  " href="index-slider -VARMA.html">AU<span class="themecolor">ROHA</span>NA SOLUTIONS</a>
+                <a class="navbar-brand nav-title  " href="index.html"><span class="themecolor">AU</span>ROHANANA SOLUTIONS</a>
             </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index-slider -VARMA.html" class="page-scroll">Home</a></li>
-            <li class="dropdown ourprojects"><a href="" class="page-scroll dropdown-toggle" data-toggle="dropdown">OUR PROJECTS<span class="caret"></span></a>
-              <ul class="dropdown-menu ourprojects-menu">
-                <li><a href="our-projects.html#automation" class="page-scroll">Test Automation</a></li>
-                <li><a href="our-projects.html#atm" class="page-scroll">Atm Softwares</a></li>
-                <li><a href="our-projects.html#finance" class="page-scroll">Financial Management</a></li>
-                <li><a href="our-projects.html#business" class="page-scroll">Business Operations</a></li>
-                <li><a href="our-projects.html#graphics" class="page-scroll">Graphic Designs</a></li>
-              </ul>
-            </li>
-            <li><a href="#two" class="page-scroll">Technology</a></li>
-            <li><a href="#three" class="page-scroll">Operations</a></li>
-            <li><a href="#four" class="page-scroll">Support</a></li>
-           <!-- <li><a href="#five" class="page-scroll">Status</a></li>
-            <li><a href="#six" class="page-scroll">Testimonials</a></li>
-             <li><a href="#seven" class="page-scroll">Services</a></li>-->
-            <li><a href="#eight" class="page-scroll">Contact</a></li>
+            <li >
+            <a href="index.html" class="page-scroll">HOME</a>
+            
+           </li>
+            
+            <li class="dropdown"><a  id="ourProjects" onclick="myFunction(this.id)" class="page-scroll">OUR PROJETCS</a>
+           	 <div id="projDropdown" class="dropdown-content proj">
+           	 <div  class="dropdownimgproj-d">
+           	 <ul class="dropdownimgproj-u">
+           	 	<li class="dropdownimg-l">
+           	 		<!--<img class="dropdownimg" src="images/loading.gif" >-->
+           	 		 <img id="pic_projects" ></img>
+           	 	</li>
+           	 </ul>
+           	 </div>
+           	<!-- <span id="pic"></span>--> 
+          <ul >
+          	<li>
+          		<a href="our-projects.html#automation" rel="p1" class="page-scroll">Test Automation</a>
+      			<a href="our-projects.html#atm" rel="p2">ATM Software</a>
+      			<a href="our-projects.html#finance" rel="p3">Finance Management</a>
+      			<a href="our-projects.html#business" rel="p4">Business Operations</a>
+          	</li>
+          </ul>
+      			
+    		</div>
+           </li>
+          
+            <li class="dropdown"><a id="technology" onclick="myFunction(this.id)" class="page-scroll">TECHNOLOGY</a>
+           	 <div id="techDropdown" class="dropdown-content techs">
+           	 <div  class="dropdownimg-div">
+           	 <ul class="dropdownimg-proj-ul">
+           	 	<li class="dropdownimg-li">
+           	 		<!--<img class="dropdownimg" src="images/loading.gif" >-->
+           	 		 <img id="pic_tech" ></img>
+           	 	</li>
+           	 </ul>
+           	 </div>
+           	 <ul >
+          	<li>
+              <a href="technology.html#web" rel="p1">Web Technologies</a>
+              <a href="technology.html#database" rel="p2">Databases</a>
+              <a href="technology.html#java" rel="p3">Java</a>
+              <a href="technology.html#microsoft" rel="p4">Microsoft Technologies</a>
+              <a href="technology.html#graphic" rel="p5">Graphic Design</a>
+				 </li>
+			</ul>
+    		</div>
+           </li>
+            <li class="dropdown"><a id="operations" onclick="myFunction(this.id)" class="page-scroll">OPERATIONS</a>
+           	 <div id="opDropdown" class="dropdown-content">
+      			<a href="#">Staff Augmentation</a>
+      			<a href="#">Business Process Outsourcing</a>
+				</div>
+      		</li>
+           
+             <li><a  class="page-scroll">SUPPORT</a></li>
+            <li><a href="#"  class="page-scroll">CONTACT US</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -108,12 +149,12 @@ VERSION : 1.1
       <div class="container">
         
           
-          <div class="gap"></div>
+      
 
         <div class="row row-works">
-          <div class="col-sm-4 port-item margin-bottom works-image">
+          <div class="col-sm-5 port-item margin-bottom works-image">
             <div class="item-img-wrap">
-              <img src="images/automation.jpg" class="img-responsive" alt="workimg">
+              <img src="images/automation_body.jpg" class="img-responsive" alt="workimg">
               <div class="item-img-overlay">
                 <a href="#" class="show-image">
                   <span></span>
@@ -123,7 +164,7 @@ VERSION : 1.1
             
           </div> <!-- /portfolio-item -->
 
-          <div class="col-sm-8 port-item margin-bottom" id="automation">
+          <div class="col-sm-7 port-item margin-bottom">
             <div class="work-desc">
                 <h1><a href="#">Test Automation</a></h1>
                 <span>We provide services for atm We provide services for atm We provide services for atm We provide services for atm We provide services for atm </span>
@@ -149,20 +190,20 @@ VERSION : 1.1
   <div class="container">
     
       
-      <div class="gap"></div>
+  
 
     <div class="row row-works">
       
-      <div class="col-sm-8 port-item margin-bottom" id="automation">
+      <div class="col-sm-7 port-item margin-bottom" >
         <div class="work-desc">
-            <h1><a href="#">Atm Softwares</a></h1>
+            <h1><a href="#">ATM Softwares</a></h1>
             <span>We provide services for atm We provide services for atm We provide services for atm We provide services for atm We provide services for atm </span>
 
           </div>
       </div>
-      <div class="col-sm-4 port-item margin-bottom works-image">
+      <div class="col-sm-5 port-item margin-bottom works-image">
         <div class="item-img-wrap">
-          <img src="images/atm.jpg" class="img-responsive" alt="workimg">
+          <img src="images/atm_body.jpg" class="img-responsive" alt="workimg">
           <div class="item-img-overlay">
             <a href="#" class="show-image">
               <span></span>
@@ -189,12 +230,9 @@ VERSION : 1.1
  ============================================================================================================================-->
  <section class="recent-works text-center" id="finance">
   <div class="container">
-    
-      
-      <div class="gap"></div>
 
     <div class="row row-works">
-      <div class="col-sm-4 port-item margin-bottom works-image">
+      <div class="col-sm-5 port-item margin-bottom works-image">
         <div class="item-img-wrap">
           <img src="images/work-1.jpg" class="img-responsive" alt="workimg">
           <div class="item-img-overlay">
@@ -206,7 +244,7 @@ VERSION : 1.1
         
       </div> <!-- /portfolio-item -->
 
-      <div class="col-sm-8 port-item margin-bottom" id="automation">
+      <div class="col-sm-7 port-item margin-bottom">
         <div class="work-desc">
             <h1><a href="#">Finance Management</a></h1>
             <span>We provide services for atm We provide services for atm We provide services for atm We provide services for atm We provide services for atm </span>
@@ -232,18 +270,18 @@ VERSION : 1.1
   <div class="container">
     
       
-      <div class="gap"></div>
+
 
     <div class="row row-works">
       
-      <div class="col-sm-8 port-item margin-bottom" id="automation">
+      <div class="col-sm-7 port-item margin-bottom">
         <div class="work-desc">
             <h1><a href="#">Business Operations</a></h1>
             <span>We provide services for atm We provide services for atm We provide services for atm We provide services for atm We provide services for atm </span>
 
           </div>
       </div>
-      <div class="col-sm-4 port-item margin-bottom works-image">
+      <div class="col-sm-5 port-item margin-bottom works-image">
         <div class="item-img-wrap">
           <img src="images/work-1.jpg" class="img-responsive" alt="workimg">
           <div class="item-img-overlay">
@@ -268,45 +306,7 @@ VERSION : 1.1
 
 
  
- <!-- [RECENT-WORKS]
- ============================================================================================================================-->
- <section class="recent-works text-center" id="graphics">
-  <div class="container">
-    
-      
-      <div class="gap"></div>
-
-    <div class="row row-works">
-      <div class="col-sm-4 port-item margin-bottom works-image">
-        <div class="item-img-wrap">
-          <img src="images/graphic.jpg" class="img-responsive" alt="workimg">
-          <div class="item-img-overlay">
-            <a href="#" class="show-image">
-              <span></span>
-            </a>
-          </div>
-        </div>
-        
-      </div> <!-- /portfolio-item -->
-
-      <div class="col-sm-8 port-item margin-bottom" id="automation">
-        <div class="work-desc">
-            <h1><a href="#">Graphic Design</a></h1>
-            <span>We provide services for atm We provide services for atm We provide services for atm We provide services for atm We provide services for atm </span>
-
-          </div>
-    </div>
-    </div> <!-- /row -->
-
-    
-
-  </div> <!-- /container -->
-</section>
-<!-- / Portfolio -->
-
-
-<!-- [/OUR-RECENT WORKS]-->
-
+ 
 
   
  
@@ -320,7 +320,7 @@ VERSION : 1.1
       <div class="col-md-4">
         <p class="footer-links"><a href="#">Terms of Use</a> <a href="#">Privacy Policy</a></p>
       </div>
-      <div class="col-md-4"> <small>&copy; 2015 Nim. All rights reserved.</small></div>
+      <div class="col-md-4"> <small>&copy; 2015 Aurohana. All rights reserved.</small></div>
       <div class="col-md-4"> 
         <!--social-->
         

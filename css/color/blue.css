@@ -16,7 +16,7 @@ VERSION : 1.1
 {
     background-color:#1963f8; /*Defines the theme bakcground color*/
 }
-.nim-menu.navbar-default .navbar-nav > li > a:hover
+.au-menu.navbar-default .navbar-nav > li > a:hover
  {
 color:#1963f8;
 }

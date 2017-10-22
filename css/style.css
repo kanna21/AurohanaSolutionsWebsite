@@ -1,7 +1,7 @@
 /*
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 AUTHOR : Vijayan PP
-PROJECT : Nim-MUTLIT PURPOSE LANDING PAGE TEMPLATE
+PROJECT : au-MUTLIT PURPOSE LANDING PAGE TEMPLATE
 VERSION : 1.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
@@ -228,6 +228,129 @@ h1, h2, h3, h4, h5, h6,
 	margin: 0;
 }
 
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+	font-size: 12px;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {color: #D4AF37 !important;}
+/*.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+	.show {display:block;}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*title side one*/
+.main-title-enhance{
+	       padding: 15px 15px;
+}
+/*logo*/
+
+.navbar-header img{
+	float: left;
+	width: 50px;
+	
+	vertical-align: middle
+}
+.subtitle{
+	text-transform: none;
+	font-size: 0.5em;
+	font-style: italic;
+	 pointer-events: none;
+   cursor: default;
+	font-weight: normal;
+
+}
+
+
+.navbar-brand p{
+	padding: 10px;
+		
+}
+
+
+
+
+.dropdown-content ul li{
+	float: left;
+/*	vertical-align: middle;
+	    display: table-cell;
+    height: 120px;*/
+}
+
+
+/*image change on hover*/
+
+#pic_projects{
+background-image: url("../images/automation.JPG") ;
+	background-repeat: no-repeat;
+  width: 95px;
+    height: 136px;
+  border: 1px solid black;
+  
+  float:left;
+}
+#pic_projects.p1 {
+  background-image: url("../images/automation.JPG");
+}
+#pic_projects.p2 {
+  background-image: url("../images/atm.jpg");
+}
+#pic_projects.p3 {
+  background-image: url("../images/finance.png");
+}
+#pic_projects.p4 {
+  background-image: url("");
+}
+
+/*-----------*/
+#pic_tech{
+background-image: url("../images/automation.JPG") ;
+	background-repeat: no-repeat;
+  width: 95px;
+    height: 170px;
+  border: 1px solid black;
+  
+  float:left;
+}
+#pic_tech.p1 {
+  background-image: url("../images/automation.JPG");
+}
+#pic_tech.p2 {
+  background-image: url("../images/atm.jpg");
+}
+#pic_tech.p3 {
+  background-image: url("../images/finance.png");
+}
+#pic_tech.p4 {
+  background-image: url("");
+}
+#pic_tech.p5 {
+  background-image: url("");
+}
+
+
+
+
+
+
 /*	BUTTON
 ------------------------------*/
 .btn {
@@ -367,7 +490,7 @@ div.preloader {
 ------------------------------*/
  
 /* Navigation */
-.nim-menu{
+.au-menu{
     
 	padding-top: 15px;
 	transition: all 0.8s;
@@ -409,9 +532,10 @@ div.preloader {
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
     margin-left: 0px;
 }
-.nim-menu a.navbar-brand {
+.au-menu a.navbar-brand {
    
     padding: 0px;
+    margin-left: 10px;
    
     
 text-transform: uppercase;
@@ -428,7 +552,7 @@ color:#fff;
 
 }
 
-.nim-menu.navbar-default .navbar-nav > li > a {
+.au-menu.navbar-default .navbar-nav > li > a {
 	
 	color: #fafafa;
 	letter-spacing: 1px;
@@ -470,9 +594,12 @@ color:#fff;
             margin-right: 10px;
         }
 
-        .nim-menu a.navbar-brand{
+        .au-menu a.navbar-brand{
             font-size: 1em;
             margin-top: 11px;            
+        }
+        .navbar-header img{
+            width: 20px;
         }
         .nav-title{
             margin: 15px 0px;
@@ -572,7 +699,8 @@ p.lead
 }
 
 .main-heading-title {
-	font-weight: 900;
+    font-family: 'Century Gothic';
+	
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size:3.5em;
@@ -581,10 +709,13 @@ p.lead
 	
 }
 .main-heading-title span {
+    
 	margin-left: 6px;
 }
 .main-heading-text {
-	font-size: 16px;
+    font-size: 2em;
+    font-style: italic;
+	
 	color: #ffffff;
 	margin-bottom: 20px;
 }
@@ -639,7 +770,7 @@ p.lead
    
     width: 100%;
     margin-top: 60px;
-    padding-top:30px;
+    padding-top:60px;
     
      
    
@@ -648,7 +779,7 @@ p.lead
 
 .row-works{
       
-    background: #D4AF37;
+    background: rgb(145, 142, 133);
     padding: 0px;
     margin-bottom: 5px;
     
@@ -709,11 +840,13 @@ p.lead
     padding-left: 0px;
     margin: 0px;
 }
+
+
 .work-desc{
    
     width: 100%;
-    height: 100%;
-    padding: 20px 40px;
+    
+    padding: 25% 40px;
     border-top: none;
     -webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -872,7 +1005,7 @@ p.lead
     padding:80px;
 }
 
-.nim-service i.fa {
+.au-service i.fa {
 	float: left;
 	font-size:1.6em;
 	width: 70px;
@@ -887,20 +1020,20 @@ p.lead
         -moz-transition:all 200ms ease-in;
         -ms-transition:all 200ms ease-in;
 }
-.nim-service .nim-service-detail {
+.au-service .au-service-detail {
 	margin-left:90px;
 }
-.nim-service .nim-service-detail h4 {
+.au-service .au-service-detail h4 {
 font-family: 'Century Gothic';
 }
-.nim-service .nim-service-detail p {
+.au-service .au-service-detail p {
 	color: #9aa7af;
         margin-top:10px;
         font-size:0.83em;
         color:#202020;
 }
 
-.nim-service:hover>i.fa
+.au-service:hover>i.fa
 {
     background:#fff;
     color:#000;
@@ -913,6 +1046,11 @@ font-family: 'Century Gothic';
 /*----------------CONTACTUS
 
 -------------------------------------------------------*/
+
+#map {
+    height: 400px;
+  }
+
 .sub-form
 {
     background:#222;

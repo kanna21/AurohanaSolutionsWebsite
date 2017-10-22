@@ -23,3 +23,84 @@ VERSION : 1.1
 /*......................................................
 	MOBILE LAYOUT
 ........................................................*/
+add this code in responsive.css
+----------------------------------
+
+
+
+
+
+@media only screen and (max-width: 767px){
+    .navbar-brand{
+		    padding: 18px 0px;
+	}
+    
+}
+   
+    
+
+
+
+/*......................................................
+	MOBILE LAYOUT
+........................................................*/
+@media only screen and (max-width: 400px) {
+	.au-menu a.navbar-brand{
+		font-size: inherit;
+	}
+	
+	  .navbar-brand p {
+    		padding: 0px;
+	  }
+	
+}
+
+
+
+@media only screen and (max-width: 500px) {
+	.au-menu a.navbar-brand{
+		font-size: medium;
+	}
+	.navbar-brand p {
+    		padding: 0px;
+	  }
+	.navbar-brand{
+		   
+		    padding: 18px 0px;
+	}
+	.dropdown:active .dropdown-content {
+    display: block;
+}
+	.dropdown:hover .dropdown-content {
+    display: none;
+}
+
+}
+
+
+
+
+/*navigation bar toggle*/
+
+/*@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: inherit !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:inherit!important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}*/
+
+@media only screen and (min-width: 991px){
+.dropdown:hover .dropdown-content {
+    		display: block;
+		}
+	
+}
+

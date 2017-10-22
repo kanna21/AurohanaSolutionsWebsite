@@ -6,6 +6,20 @@ PROJECT :NIM
 VERSION : 1.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
+$(document).ready(function(){
+    $(".proj ul a").hover(function(){
+		
+        $("#pic_projects").removeClass().addClass($(this).attr('rel'));
+    });
+   
+});
+$(document).ready(function(){
+    $(".tech ul a").hover(function(){
+		
+        $("#pic_tech").removeClass().addClass($(this).attr('rel'));
+    });
+   
+});
 
 (function($) {
 	"use strict";
@@ -34,17 +48,17 @@ VERSION : 1.1
 	 $("div.preloader").fadeOut("slow");                         
                          
 	},
-        typing:function()
-        {
-    $(".main-element").each(function(){
-    var $this = $(this);
-    $this.typed({
-    strings: $this.attr('data-elements').split(','),
-    typeSpeed: 100, // typing speed
-    backDelay: 3000 // pause before backspacing
-    });
-});
-        },
+    typing:function()
+    {
+            $(".main-element").each(function(){
+            var $this = $(this);
+            $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 100, // typing speed
+            backDelay: 3000 // pause before backspacing
+            });
+        });
+    },
         
        
     
@@ -73,18 +87,21 @@ VERSION : 1.1
        var themecolor="#f8198d";
       if(top_v>=30)
       {
-        
-          $(".nim-menu").css({height:"80px",padding:"15px",background:"#fff",boxShadow:"2px 2px 3px 3px rgba(0,0,0,0.3"});
-          $(".nim-menu.navbar-default .navbar-nav > li > a,a.navbar-brand").css("color","#000");
-           $(".nim-menu.navbar-default .navbar-nav > li > a").hover(function(){$(this).css("color",themecolor)},function(){$(this).css("color","#000")})
+        $(".dropdown-content").css("background-color","#fff");
+        $(".dropdown-content a").css("color","#000");
+          $(".au-menu").css({height:"80px",padding:"15px",background:"#fff",boxShadow:"2px 2px 3px 3px rgba(0,0,0,0.3"});
+          $(".au-menu.navbar-default .navbar-nav > li > a,a.navbar-brand").css("color","#000");
+           $(".au-menu.navbar-default .navbar-nav > li > a").hover(function(){$(this).css("color",themecolor)},function(){$(this).css("color","#000")})
        }
       else
       {
-          $(".nim-menu").css({height:"0px",padding:"15px",background:"#000",boxShadow:"2px 2px 3px 3px rgba(0,0,0,0.3"});
-          $("a.navbar-brand").css("color","#fff");          
-          $(".nim-menu.navbar-default .navbar-nav > li > a").css("color","#fafafa");
-          $(".nim-menu.navbar-default .navbar-nav > li > a:hover").css("color",themecolor);
-          $(".nim-menu.navbar-default .navbar-nav > li > a").hover(function(){$(this).css("color",themecolor)},function(){$(this).css("color","#fafafa")})
+          $(".au-menu").css({height:"0px",padding:"15px",background:"#000",boxShadow:"2px 2px 3px 3px rgba(0,0,0,0.3"});
+          $("a.navbar-brand").css("color","#fff");    
+          $(".dropdown-content").css("background-color","#000");
+		  $(".dropdown-content a").css("color","#fff");      
+          $(".au-menu.navbar-default .navbar-nav > li > a").css("color","#fafafa");
+          $(".au-menu.navbar-default .navbar-nav > li > a:hover").css("color",themecolor);
+          $(".au-menu.navbar-default .navbar-nav > li > a").hover(function(){$(this).css("color",themecolor)},function(){$(this).css("color","#fafafa")})
       }
        }
        )
@@ -151,7 +168,6 @@ VERSION : 1.1
 })(jQuery);
 
 
-
 /*+++++++++++++++++++++++++COMMON FUNCTIONS++++++++++++++++++++++++++++*/
 
 /*KENBERG SLIDER*/
@@ -161,7 +177,7 @@ VERSION : 1.1
       $("section.main-heading").vegas({
 	delay: 3000,
     slides: [
-        { src: "images/bak3.jpg" },
+        { src: "images/bak1.jpg" },
         { src: "images/bak2.jpg" },
         { src: "images/bak3.jpg" },
         { src: "images/bak4.jpg" }
